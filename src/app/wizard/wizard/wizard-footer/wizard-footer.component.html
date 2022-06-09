@@ -1,0 +1,4 @@
+<div *ngIf="activeStep">
+  <button type="button" [disabled]="!activeStep.hasPrev" (click)="prevStep()" class="btn btn-primary wizard-btn btn-lg w-25 ms-4 minw-150-md">Back</button>
+  <button type="button" [disabled]="!activeStep.hasNext" (click)="nextStep()" class="btn btn-primary wizard-btn btn-lg w-25 ms-4 minw-150-md">Next</button>
+</div>

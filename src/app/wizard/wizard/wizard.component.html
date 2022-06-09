@@ -1,15 +1,6 @@
 <div class="wizard mt-5 pb-5 container text-center">
-  <app-step-indicator></app-step-indicator>
-
-  <div class="wizard-content-area mb-5">
-    <h1>Step 1</h1>
-    <p class="fs-4 fw-light">You have continued here!</p>
-  </div>
-
-
-  <div>
-    <button type="button" class="btn btn-primary wizard-btn btn-lg w-25 ms-4">Back</button>
-    <button type="button" class="btn btn-primary wizard-btn btn-lg w-25 ms-4">Next</button>
-  </div>
+  <app-step-indicator [steps]="steps"></app-step-indicator>
+  <app-wizard-content [activeStep]="activeStep"></app-wizard-content>
+  <app-wizard-footer [activeStep]="activeStep" (changeStepIndex)="changeStep($event.index)"></app-wizard-footer>
 </div>
 

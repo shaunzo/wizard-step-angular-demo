@@ -1,0 +1,9 @@
+<div *ngIf="activeStep" class="wizard-content-area mb-5">
+  <h1>Step {{ activeStep.number }}</h1>
+  <p class="fs-4 fw-light">{{ activeStep.text }}</p>
+</div>
+
+<div *ngIf="!activeStep" class="alert alert-dark" role="alert">
+  No steps to show!
+</div>
+
