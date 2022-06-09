@@ -1,0 +1,21 @@
+@import '../../../scss/custom-variables';
+
+.step-indicator {
+
+  justify-content: center;
+  align-items: center;
+
+  .line {
+    background-color: $primary;
+    height: 1px;
+    width: 100%;
+  }
+}
+
+.step-indicator {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

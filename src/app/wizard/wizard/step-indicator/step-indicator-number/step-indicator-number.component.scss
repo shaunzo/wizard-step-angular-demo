@@ -1,0 +1,13 @@
+@import '../../../../scss/custom-variables';
+
+.step-indicator-number {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid $primary;
+  color: $primary;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
